@@ -118,7 +118,11 @@ class DynamicFormType extends AbstractType
             $formFieldType = $this->typePool->get($field->getType());
 
             // required
-            if (!$formFieldType instanceof FreeTextType && $field->getRequired()) {
+            if (
+                !$formFieldType instanceof FreeTextType
+                && !$formFieldType instanceof HeadlineType
+                && $field->getRequired()
+            ) {
                 $options['constraints'][] = new NotBlank();
             }
 
