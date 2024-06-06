@@ -14,6 +14,7 @@ namespace Sulu\Bundle\FormBundle\Form\Type;
 use Sulu\Bundle\FormBundle\Dynamic\Checksum;
 use Sulu\Bundle\FormBundle\Dynamic\FormFieldTypePool;
 use Sulu\Bundle\FormBundle\Dynamic\Types\FreeTextType;
+use Sulu\Bundle\FormBundle\Dynamic\Types\HeadlineType;
 use Sulu\Bundle\FormBundle\Entity\Dynamic;
 use Sulu\Bundle\FormBundle\Entity\Form;
 use Sulu\Bundle\FormBundle\Exception\FormNotFoundException;
